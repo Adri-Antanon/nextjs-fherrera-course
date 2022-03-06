@@ -11,6 +11,7 @@ export const List = () => {
           <ListItem
             description={branch.description}
             title={branch.title}
+            branch={branch.branch}
             key={branch.title}
           />
         ))}
