@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import { Navbar } from '../src/components/UI/navbar';
 
 export default function Home() {
   return (
@@ -12,10 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navbar />
+
       <main className={styles.main}>
+        <h1>Home page</h1>
         <h1 className={styles.title}>
           Ir a{' '}
-          <Link href={'/about'} passHref>
+          <Link href={'/about'}>
             <a>About</a>
           </Link>
         </h1>

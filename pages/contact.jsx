@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar />
 
       <main className={styles.main}>
-        <h1>About page</h1>
+        <h1>Contact page</h1>
 
         <h1 className={styles.title}>
           Ir a{' '}
