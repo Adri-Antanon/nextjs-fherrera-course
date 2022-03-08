@@ -1,14 +1,16 @@
 import { NavLink } from '../../navlink';
 import styles from './styles.module.css';
 
+import { menuItems } from './menuItems';
+
 export const Navbar = () => {
   return (
     <nav className={styles['menu-container']}>
-      <NavLink href="/" exact>
-        Home
-      </NavLink>
-      <NavLink href="/about">About</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
+      {menuItems.map((item) => (
+        <NavLink key={item.text} href={item.href} exact={item.href === '/'}>
+          {item.text}
+        </NavLink>
+      ))}
     </nav>
   );
 };

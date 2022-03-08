@@ -1,18 +1,27 @@
 import Link from 'next/link';
 
 import { MainLayout } from '../src/components/UI/layout';
+import { DarkLayout } from '../src/components/UI/layout/DarkLayout';
 
-export default function Home() {
+export default function AboutPage() {
   return (
-    <MainLayout>
+    <>
       <h1>About page</h1>
 
-      <h1 claclassName="title">
+      <h1 className="title">
         Ir a{' '}
         <Link href={'/'}>
           <a>Home</a>
         </Link>
       </h1>
-    </MainLayout>
+    </>
   );
 }
+
+AboutPage.getLayout = function getLayout(page) {
+  return (
+    <MainLayout>
+      <DarkLayout>{page}</DarkLayout>
+    </MainLayout>
+  );
+};

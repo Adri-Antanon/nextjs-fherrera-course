@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { MainLayout } from '../src/components/UI/layout';
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <MainLayout>
       <h1>Contact page</h1>
