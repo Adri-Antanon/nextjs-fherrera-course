@@ -1,3 +1,4 @@
+import { ReactElement } from 'react';
 import Link from 'next/link';
 
 import { MainLayout } from '../../src/components/UI/layout';
@@ -20,7 +21,7 @@ const PricingPage = () => {
 
 export default PricingPage;
 
-PricingPage.getLayout = function getLayout(page) {
+PricingPage.getLayout = function getLayout(page: ReactElement) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>

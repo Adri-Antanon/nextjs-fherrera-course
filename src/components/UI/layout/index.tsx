@@ -1,11 +1,16 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { FC } from 'react';
 
 import { Navbar } from '../navbar';
 
 import styles from './styles.module.css';
 
-export const MainLayout = ({ children }) => {
+// interface IMainLayout {
+//   children: ReactNode | ReactNode[];
+// }
+
+export const MainLayout: FC = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>

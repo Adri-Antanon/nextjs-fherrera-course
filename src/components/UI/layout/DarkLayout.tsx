@@ -1,4 +1,10 @@
-export const DarkLayout = ({ children }) => {
+import { FC, ReactNode } from 'react';
+
+// interface IDarkLayout {
+//   children: ReactNode | ReactNode[];
+// }
+
+export const DarkLayout: FC = ({ children }) => {
   return (
     <div
       style={{

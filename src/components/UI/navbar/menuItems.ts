@@ -1,4 +1,9 @@
-export const menuItems = [
+type MenuItem = {
+  text: string;
+  href: string;
+};
+
+export const menuItems: MenuItem[] = [
   {
     text: 'Home',
     href: '/',
