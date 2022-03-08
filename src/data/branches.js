@@ -5,4 +5,10 @@ export const listOfBranches = [
     description:
       'Explicación y visualizado general de cómo funciona Next, utilización de componentes propios como Link o head, API generada por defecto, Layouts, CSS Module...',
   },
+  {
+    title: 'TypeScript y Despliegues',
+    branch: '2-typescript-and-deploy',
+    description:
+      'Migración de JS a TS, despliegue de la aplicación en Vercel y generar imagen de Docker',
+  },
 ];
