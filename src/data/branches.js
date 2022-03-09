@@ -11,4 +11,10 @@ export const listOfBranches = [
     description:
       'Migración de JS a TS, despliegue de la aplicación en Vercel y generar imagen de Docker',
   },
+  {
+    title: 'Generar información estática',
+    branch: '3-static-generated-app',
+    description:
+      'Uso de información estática con getStaticPath y getStaticProps ',
+  },
 ];
